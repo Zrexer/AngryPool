@@ -7,7 +7,16 @@ const http = require('http');
 const clc = require('./colors');
 
 const helpx = () => {
-    console.log(`${argv[0]} ${argv[1]} -u http_link/https_link [objects]`);
+    console.log(`${argv[0]} ${argv[1]} -u/--url http_link/https_link [objects]`);
+    console.log("Objects:    --status");
+    console.log("            --url");
+    console.log("            --header");
+    console.log("            --raw-header");
+    console.log("            --method");
+    console.log("            --encoding");
+    console.log("            --url");
+    console.log("            --construct");
+    console.log("            --http-version");
 }
 
 
