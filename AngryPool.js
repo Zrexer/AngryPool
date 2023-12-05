@@ -25,11 +25,11 @@ const pos = (_) => {
 }
 
 const neg = (_) => {
-    console.log(clc.white('[') + clc.red('-') + clc.white(']') + ` ${_}`)
+    console.log(clc.white('[') + clc.red('-') + clc.white(']') + ` ${_}`);
 }
 
 const action = (_) => {
-    console.log(clc.white('[') + clc.yellow('!') + clc.white(']') + ` ${_}`)
+    console.log(clc.white('[') + clc.yellow('!') + clc.white(']') + ` ${_}`);
 }
 
 if (argv[2] == '-u'){
