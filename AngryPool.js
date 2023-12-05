@@ -7,7 +7,7 @@ const http = require('http');
 const clc = require('./colors');
 
 const helpx = () => {
-    console.log(`${argv[0]} ${argv[1]} -u/--url http_link/https_link [objects]`);
+    console.log(`${argv[0]} ${argv[1]} -u http_link/https_link [objects]`);
     console.log("Objects:    --status");
     console.log("            --url");
     console.log("            --header");
@@ -32,7 +32,7 @@ const action = (_) => {
     console.log(clc.white('[') + clc.yellow('!') + clc.white(']') + ` ${_}`)
 }
 
-if (argv[2] == '-u' || argv[2] == '--url'){
+if (argv[2] == '-u'){
     const url = argv[3];
 
     if (url === undefined){
